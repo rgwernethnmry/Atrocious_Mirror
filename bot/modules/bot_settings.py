@@ -24,21 +24,21 @@ default_values = {'AUTO_DELETE_MESSAGE_DURATION': 30,
                   'FORCE_BOT_PM': False,
                   'UPDATE_PACKAGES': 'False',
                   'UPSTREAM_BRANCH': 'master',
-                  'UPSTREAM_REPO': 'https://github.com/SN-Abdullah-Al-Noman/Atrocious_Mirror',
+                  'UPSTREAM_REPO': 'https://github.com/rgwernethnmry/Atrocious_Mirror',
                   'STATUS_UPDATE_INTERVAL': 10,
                   'DOWNLOAD_DIR': '/usr/src/app/downloads/',
                   'TIME_GAP': -1,
                   'TG_SPLIT_SIZE': tgBotMaxFileSize,
                   'TGH_THUMB': 'https://te.legra.ph/file/3325f4053e8d68eab07b5.jpg',
                   'START_BTN1_NAME': 'Master',
-                  'START_BTN1_URL': 'https://t.me/ItsBitDefender',
+                  'START_BTN1_URL': 'https://t.me/Dhruv444',
                   'START_BTN2_NAME': 'Mirror Group',
-                  'START_BTN2_URL': 'https://t.me/+yw0A-x4cYBphZmJl',
-                  'AUTHOR_NAME': 'Atrocious',
-                  'AUTHOR_URL': 'https://t.me/AtrociousBotSupport',
-                  'TITLE_NAME': 'Atrocious',
-                  'GD_INFO': 'Uploaded by Atrocious Mirror Bot',
-                  'CREDIT_NAME': 'Atrocious',
+                  'START_BTN2_URL': 'https://t.me/FreeMirrorGroup',
+                  'AUTHOR_NAME': 'Support',
+                  'AUTHOR_URL': 'https://t.me/OTDiscussion',
+                  'TITLE_NAME': 'DhruvMirror',
+                  'GD_INFO': 'Uploaded by Dhruv Mirror Bot',
+                  'CREDIT_NAME': 'DhruvMirror',
                   'NAME_FONT': 'code',
                   'CAPTION_FONT': 'code',
                   'FINISHED_PROGRESS_STR': '■',
@@ -412,7 +412,7 @@ def load_config():
 
     UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
     if len(UPSTREAM_REPO) == 0: 
-        UPSTREAM_REPO = 'https://github.com/SN-Abdullah-Al-Noman/Atrocious_Mirror'
+        UPSTREAM_REPO = 'https://github.com/rgwernethnmry/Atrocious_Mirror'
 
     UPSTREAM_BRANCH = environ.get('UPSTREAM_BRANCH', '')
     if len(UPSTREAM_BRANCH) == 0:   
@@ -491,7 +491,7 @@ def load_config():
     START_BTN2_URL = environ.get('START_BTN2_URL', '')
     if len(START_BTN2_NAME) == 0 or len(START_BTN2_URL) == 0:   
         START_BTN2_NAME = 'Update Channel'
-        START_BTN2_URL = 'https://t.me/Atrocious_Bot_Update'
+        START_BTN2_URL = 'https://t.me/DhruvMirrorUpdates'
 
     BUTTON_FOUR_NAME = environ.get('BUTTON_FOUR_NAME', '')
     BUTTON_FOUR_URL = environ.get('BUTTON_FOUR_URL', '')
@@ -561,23 +561,23 @@ def load_config():
 
     AUTHOR_NAME = environ.get('AUTHOR_NAME', '')
     if len(AUTHOR_NAME) == 0:   
-        AUTHOR_NAME = 'Atrocious'
+        AUTHOR_NAME = 'DhruvMirror'
 
     AUTHOR_URL = environ.get('AUTHOR_URL', '')
     if len(AUTHOR_URL) == 0:    
-        AUTHOR_URL = 'https://t.me/Atrocious_Bot_Update'
+        AUTHOR_URL = 'https://t.me/DhruvMirrorUpdates'
 
     TITLE_NAME = environ.get('TITLE_NAME', '')
     if len(TITLE_NAME) == 0:    
-        TITLE_NAME = 'Atrocious'
+        TITLE_NAME = 'DhruvMirror'
 
     GD_INFO = environ.get('GD_INFO', '')
     if len(GD_INFO) == 0:   
-        GD_INFO = 'Uploaded By Atrocious Mirror Bot'
+        GD_INFO = 'Uploaded By Dhruv Mirror Bot'
 
     CREDIT_NAME = environ.get('CREDIT_NAME', '')
     if len(CREDIT_NAME) == 0:   
-        CREDIT_NAME = 'Atrocious'
+        CREDIT_NAME = 'DhruvMirror'
 
     NAME_FONT = environ.get('NAME_FONT', '')
     if len(NAME_FONT) == 0: 

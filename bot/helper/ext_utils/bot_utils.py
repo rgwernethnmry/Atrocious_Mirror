@@ -372,7 +372,7 @@ def get_readable_message():
         buttons = ButtonMaker()
         buttons.sbutton("Refresh", "status refresh")
         buttons.sbutton("Statistics", str(THREE))
-        buttons.buildbutton(f"Repo", f"https://github.com/SN-Abdullah-Al-Noman/Atrocious_Mirror")
+        buttons.buildbutton(f"Owner", f"https://t.me/Dhruv444")
         buttons.sbutton("Close", "status close")
         sbutton = buttons.build_menu(3)
         
@@ -382,14 +382,14 @@ def get_readable_message():
             buttons.sbutton(f"{PAGE_NO}/{PAGES}", str(THREE))
             buttons.sbutton("Next⏩", "status nex")
             buttons.sbutton("Refresh", "status refresh")
-            buttons.buildbutton(f"Repo", f"https://github.com/SN-Abdullah-Al-Noman/Atrocious_Mirror")
+            buttons.buildbutton(f"Owner", f"https://t.me/Dhruv444")
             buttons.sbutton("Close", "status close")
         else:
             buttons.sbutton("Previous", "status pre")
             buttons.sbutton(f"{PAGE_NO}/{PAGES}", str(THREE))
             buttons.sbutton("Next", "status nex")
             buttons.sbutton("Refresh", "status refresh")
-            buttons.buildbutton(f"Repo", f"https://github.com/SN-Abdullah-Al-Noman/Atrocious_Mirror")
+            buttons.buildbutton(f"Owner", f"https://t.me/Dhruv444")
             buttons.sbutton("Close", "status close")
             button = buttons.build_menu(3)
             return msg + bmsg, button
