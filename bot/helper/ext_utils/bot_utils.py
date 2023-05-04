@@ -698,7 +698,7 @@ def bot_sys_stats():
     mem = virtual_memory().percent
     disk = disk_usage("/").percent
     return f"""
-Modified by @ItsBitDefender
+Modified by @Dhruv444
 
 Tasks Running: {tasks}
 
