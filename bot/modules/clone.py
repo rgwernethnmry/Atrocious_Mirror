@@ -61,9 +61,9 @@ def _clone(message, bot):
                 return sendMessage(f"<b>Bot User Task Limit : {USER_TASKS_LIMIT} \nYOUR TASK : {get_user_task(user_id)}\nUser Task Limit Exceed</b>\nBuy Paid Service", bot ,message)
         else:
             if TOTAL_TASKS_LIMIT == total_task:
-                return sendMessage(f"<b>Bot Total Task Limit : {TOTAL_TASKS_LIMIT}\nTasks Processing : {total_task}\nTotal Task Limit Exceed </b>", bot ,message)
+                return sendMessage(f"<b>Hey, Currently I am already having {total_task}</b>, <b>which is allowed by my master. Check Other bots or wait for me to Complete these tasks first.</b>", bot ,message)
             if USER_TASKS_LIMIT == get_user_task(user_id):
-                return sendMessage(f"<b>Bot User Task Limit : {USER_TASKS_LIMIT} \nYOUR TASK : {get_user_task(user_id)}\nUser Task Limit Exceed</b>", bot ,message)
+                return sendMessage(f"<b>Hey, Your Task Has Not Been Added As You've Already added {get_user_task(user_id)} Tasks With Me Which Is Allowed By My Master.</b>\n\n<b>You Can Check Other Bots For Availability Or Wait For Me To Finish One Of Your Task First.</b>", bot ,message)
         time_gap = timegap_check(message)
         if time_gap:
             return
